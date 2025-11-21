@@ -1,227 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Hi, I'm Livia. Welcome to my first landing page.</title>
-    <meta name="description" content="Personal landing page of Livia Oktantia — profile, projects, and contact."/>
-    <meta name="keywords" content="about me, website developer, software engineer, digital marketing"/>
-    <meta name="author" content="Livia Oktantia"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi, I'm Livia | Digital Portfolio</title>
+  <meta name="description" content="Digital portfolio of Livia Oktantia — profile, projects, blog highlights, and contact." />
+  <meta name="keywords" content="Livia Oktantia, software engineering student, digital marketing, portfolio" />
+  <meta name="author" content="Livia Oktantia" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
-    <body style="margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; background: #F6FAF8; color: #2B2B2B">
+<body>
 
-        <!-- Header -->
-        <header style="background-color: #005C46; padding: 30px 0;">
-            <nav aria-label="Primary" style="max-width:1200px; margin: 0 auto; padding: 0 20px; text-align: right;">
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="display: inline; margin: 0 10px">
-                        <a href="#home" style="color: #FFF; font-weight: 600; text-decoration: none;">Home</a>  
-                    </li>
-                    <li style="display: inline; margin: 0 10px">
-                        <a href="#about" style="color: #FFF; font-weight: 600; text-decoration: none;">About me</a> 
-                    </li>
-                    <li style="display: inline; margin: 0 10px">
-                        <a href="#projects" style="color: #FFF; font-weight: 600; text-decoration: none;">Projects</a> 
-                    </li>
-                    <li style="display: inline; margin: 0 10px">
-                        <a href="#contact" style="color: #FFF; font-weight: 600; text-decoration: none;">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <!-- HEADER / MEGA NAV -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <!-- left logo -->
+        <a href="#hero">
+          <img src="/test/image/digital-portfolio-logo.webp" class="nav-logo">
+        </a>
 
-        <!-- Main Content -->
-        <main style="max-width:1200px; margin:0 auto; padding:20px;">
+        <!-- center menu -->
+        <ul class="nav-menu">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
 
-            <!-- Hero Section -->
-            <section id="home" style="background:#E5E7EB; border:1px; border-radius:10px; padding:28px 20px; text-align:center;">
-                <h1 style="margin:0 0 10px 0; color:#0B3B2F; font-size: 38px; font-weight: 800;">Hi, I'm Livia.</h1>
-                    <p style="max-width:800px; margin:0 auto 16px auto; line-height:1.5;">
-                        Welcome to my first landing page ever!
-                    </p>
-                    <p style="max-width:800px; margin:0 auto 16px auto; line-height:1.5;">
-                        This page was created as part of my learning journey in the <strong>RevoU Software Engineering</strong> program. It will continue to evolve as I grow and gain new skills, so stay tuned for exciting updates! 
-                        For now, let's get to know me by exploring this page.
-                    </p>
-            </section>
-            
-            <!--About Section -->
-            <section id="about" style="margin-top:18px; background:#F3F3F3; border:1px solid #DDE5E2; border-radius:10px; padding:24px 20px;">
-                <h2 style="margin:0 0 12px 0; color:#005C46;">About Me</h2>
+        <!-- right CTA -->
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </header>
 
-                <!-- presentation table for side-by-side layout -->
-                <table role="presentation" style="width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <!--Left-->
-                        <td style="width: 160px; vertical-align: top; padding: 10px">
-                            <figure>
-                                <img src="image/livia-oktantia.webp" alt="Portrait of Livia Oktantia" rel="noindex" 
-                                style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:1px solid #DDE5E2;">
-                            </figure>
-                        </td>
+  <main>
 
-                        <!--Right-->
-                        <td style="vertical-align:top; padding:8px 8px 16px 8px;">
-                            <p style="max-width:800px; margin:0 auto 16px auto;">
-                                I'm currently based in Yogyakarta, Indonesia—a city admired by many for its perfect blend of chill vibes, scenic rice fields, cozy coffee shops, vibrant university life, and a thriving remote work culture.
-                                I bring a strong background in digital marketing and business development, paired with a growing passion for deepening my technical skills in software engineering.</p>
-                            <p style="max-width:800px; margin:0 auto 16px auto;">
-                                I believe in the power of combining creativity and technology to craft meaningful digital experiences. 
-                                My approach blends strategic thinking with hands-on execution to deliver clear, practical web solutions—from planning and content creation to lightweight coding and performance measurement.
-                            </p>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm Livia.</h1>
+          <p>
+            Digital marketer and software engineering student who enjoys connecting strategy, content,
+            and website experiences. This page is part of my learning journey in the <strong>RevoU Software Engineering</strong> program.
+            I'll keep improving it as I learn more about HTML, CSS, JavaScript and other website development subject.
+          </p>
 
-                        <h3 style="max-width:800px; margin:0 auto 16px auto; color:#005C46;">Areas of Expertise</h3>
-                            <ul style="max-width:800px; margin:0 auto 16px auto;">
-                                <li><h4>Full-Stack Digital Marketing</h4></li>
-                                <li><h4>Business Development</h4></li>
-                                <li><h4>Software Engineering</h4></li>
-                            </ul>
+          <div class="hero-actions">
+            <a href="#projects" class="hero-button-primary">View Projects</a>
+            <a href="#blog" class="hero-button-secondary">Read the Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <a href="https://www.linkedin.com/in/liviaoktantia" target="_blank" rel="noopener" 
-                            style="max-width:800px; margin:0 auto 8px auto; background-color:#C2A83E; color:#000; text-decoration: none; padding:10px; border-radius:5px; display:inline-block;">
-                            <b>Let's connect in LinkedIn</b>
-                        </td>
-                    </tr>
-                 </table>
-                 
-                </a>
-            </section>
+    <!-- ABOUT ME -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
 
-            <!--Projects Table Section -->
-            <section id="projects" style="margin-top:18px; background:#E5E7EB; border:1px solid #E5E7EB; border-radius:10px; padding:28px 20px;">
-                <h2 style="margin:0 0 10px 0; color:#0B3B2F;">Projects</h2>
-                <p style="margin:0 0 12px 0; line-height:1.5;">
-                    As I just started my learning curve in software engineering, I don't have major projects to showcase yet.
-                    But this portfolio will evolve over time as I build new skills and complete real-world assignments.
-                    For now, I'm also including a few highlights from my digital marketing work to reflect my professional experience and creativity.
-                </p>
-                    <table style="width:100%; border-collapse:collapse; background:#F6FAF8; border:1px solid #E5E7EB;">
-                        <caption style="caption-side:top; text-align:left; font-weight:700; padding:8px 10px; color:#0B3B2F;">
-                            <h3>My Placeholder Projects</h3>
-                        </caption>
-                        <thead>
-                            <tr style="background:#B9BAA3;">
-                                <th scope="col" style="text-align:left; padding:10px; border:1px solid #E5E7EB;">Project Name</th>
-                                <th scope="col" style="text-align:left; padding:10px; border:1px solid #E5E7EB;">Type</th>
-                                <th scope="col" style="text-align:left; padding:10px; border:1px solid #E5E7EB;">Description</th>
-                                <th scope="col" style="text-align:left; padding:10px; border:1px solid #E5E7EB;">Tools</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                             <tr>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">HTML Website Group Project</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Software Engineering</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Practice crating landing page for team profile & collaboration using Git merge and pull request.
-                                    <a href="/milestone-1-liviaoktantia/asset/fsse-oct25-team5-web-portfolio-collab.pdf" target="_blank" rel="noopener">Download group portfolio.</a></td>                                    
-                                <td style="padding:10px; border:1px solid #E5E7EB;">VS Code, GitHub, Terminal CMD</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">HTML Component</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Software Engineering</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Practice with headings, lists, links, images</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">VS Code, GitHub, Terminal CMD</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Campaign Performance Dashboard</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Digital Marketing</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Analyze and Visualize campaign KPIs</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Looker Studio, HubSpot, Google Ads</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Social Media Paid Campaign</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Digital Marketing</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">Promote an annual event to target specific audiences</td>
-                                <td style="padding:10px; border:1px solid #E5E7EB;">LinkedIn Ads, Canva</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                
-                <h3 style="text-align:left; font-weight:700; padding:8px 10px; color:#0B3B2F;">
-                    Website Management
-                </h3>
-                <p style="padding:8px 10px; line-height:1.5;">
-                    I have extensive experience in website management, with a strong focus on content production, including blog writing and SEO/GEO optimization (80%), 
-                    alongside technical configuration tasks (20%).
-                </p>
-                <ul style="padding:auto;">
-                    <li><a href="https://www.camline.com/" target="_blank" rel="noopener"><h4>www.camLine.com</h4></a></li>
-                    <li><a href="https://www.elisaindustriq.com/" target="_blank" rel="noopener"><h4>www.elisaindustriq.com</h4></a></li>
-                    <li><a href="https://estheticrosereve.com/" target="_blank" rel="noopener"><h4>www.estheticrosereve.com</h4></a></li>
-                </ul>
-            </section>
+        <div class="about-layout">
+          <!-- left column photo -->
+          <div class="about-col-left">
+            <figure>
+              <img src="image/livia-oktantia.jpg" alt="Portrait of Livia Oktantia" class="about-photo" />
+            </figure>
+          </div>
 
-            <!--Contact Form Section -->
-            <section id="contact" style="margin-top:18px; margin-bottom: 10px; background:#F0EFF4; border:1px solid #E5E7EB; border-radius:10px; padding:28px 20px;">
-                <h2 style="margin:0 0 10px 0; color:#0B3B2F;">Let's Collaborate</h2>
-                <p style="margin:0 auto 50px auto;">
-                    Please complete and submit the form below to get in touch. I'll respond as soon as possible.
-                </p>
-                
-            <form action="#" method="post" 
-                style="max-width:720px; margin:0 auto; background-color:#E0EEC6; padding:20px; border:1px solid #cfe3c1; border-radius:10px; box-shadow:0 8px 20px #000;">
+          <!-- center column Intro -->
+          <div class="about-col-center">
+            <h3>Introduction</h3>
+            <p>
+              I'm currently based in Yogyakarta, Indonesia, a city known for its mix of calm rice fields, coffee shops,
+              and vibrant university life. I bring a strong background in digital marketing and business development,
+              paired with a growing interest in software engineering.
+              I enjoy combining creativity and technology to build meaningful digital experiences, from planning and SEO
+              to lightweight coding and performance measurement.
+            </p>
+          </div>
 
-            <fieldset style="border:1px solid #7CA982; border-radius:8px; padding:16px; margin:0;">
-                <legend style="padding:0 8px; color:#005C46; font-weight:600; text-align: center;">
-                    Submit Your Message Here
-                </legend>
-                
-                <!-- Name group -->
-                <div style="margin-bottom:12px;">
-                    <label for="first-name" style="display:block; font-weight:600; margin-bottom:6px; color:#2B2B2B;">First Name *</label>
-                    <input id="first-name" name="first_name" type="text" required placeholder="Your first name" 
-                        autocomplete="given-name" style="width:90%; padding:10px; border:1px solid #7CA982; border-radius:6px;">
-                </div>
+          <!-- right column Expertise -->
+          <div class="about-col-right">
+            <h3>Area of Expertise</h3>
+            <ul class="about-expertise-list">
+              <li>Full-Stack Digital Marketing</li>
+              <li>Business Development</li>
+              <li>Software Engineering (in progress)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div style="margin-bottom:12px;">
-                    <label for="last-name" style="display:block; font-weight:600; margin-bottom:6px; color:#2B2B2B;">Last Name *</label>
-                    <input id="last-name" name="last_name" type="text" required placeholder="Your last name" autocomplete="family-name"
-                        style="width:90%; padding:10px; border:1px solid #7CA982; border-radius:6px;">
-                </div>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <p class="projects-subtitle">
+          A mix of current software engineering assignments and representative digital marketing work.
+          This section will keep growing as I learn and ship more.
+        </p>
 
-                <!-- Email -->
-                <div style="margin-bottom:12px;">
-                    <label for="email" style="display:block; font-weight:600; margin-bottom:6px; color:#2B2B2B;">Email *</label>
-                    <input id="email" name="email" type="email" required placeholder="name@example.com" autocomplete="email" inputmode="email"
-                        style="width:90%; padding:10px; border:1px solid #7CA982; border-radius:6px;">
-                </div>
+        <!-- Featured: Personal Portfolio Website -->
+        <article class="featured-project">
+            <div class="featured-tag">Current Focus</div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A responsive single-page site built with semantic HTML and external CSS,
+                styled based on an earlier landing page layout.
+            </p>
+            <p>
+                It showcases my background, practice projects, and a contact form, and will evolve
+                as I learn more about front-end development.
+            </p>
+            <p class="featured-meta">
+                Technologies: HTML, CSS, Git, GitHub
+            </p>
+            <a href="#hero" class="featured-btn">View this page</a>
+            </article>
 
-                <!-- Message -->
-                <div style="margin-bottom:12px;">
-                    <label for="message" style="display:block; font-weight:600; margin-bottom:6px; color:#2B2B2B;">Your Message *</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."
-                        style="width:90%; padding:10px; border:1px solid #7CA982; border-radius:6px; resize:vertical;"></textarea>
-                </div>
+        <!-- Featured: Website Management -->
+        <article class="featured-project">
+            <div class="featured-tag">Real-world experience</div>
+            <h3>Website Management</h3>
+            <p>
+                Ongoing work managing content, SEO, and updates for B2B and service-based websites.
+                My focus is on clarity, performance, and a smooth user journey.
+            </p>
+            <p>
+                This includes planning content, coordinating with stakeholders, and translating business goals
+                into web experiences that are easy to navigate and measure.
+            </p>
+            <p class="featured-meta">
+                Please refer to this website:
+            </p>
+            <ul class="project-web-list">
+                <li><a href="https://www.camline.com/" target="_blank" rel="noopener">www.camLine.com</a></li>
+                <li><a href="https://www.elisaindustriq.com/" target="_blank" rel="noopener">www.elisaindustriq.com</a></li>
+                <li><a href="https://www.estheticrosereve.com/" target="_blank" rel="noopener">www.estheticrosereve.com</a></li>
+            </ul>
+            </article>
 
-                <!-- Submit -->
-                <div style="text-align:left; margin-top:8px; margin-bottom: 10px;">
-                <button type="submit" 
-                    style="background-color:#A22C29; color:#FFF; padding:10px 18px; border:1px solid #A22C29; border-radius:6px; font-weight:700;cursor:pointer;">
-                    Send Message
-                </button>
+        <!-- Smaller project grid -->
+        <div class="project-grid">
 
-                <p style="margin:20px 0 10px 0; color:#000; font-size: 12px; font-style: italic;">
-                    Fields marked * are required.
-                </p>
-                </div>
+          <!-- Card 1 -->
+          <article class="project-card">
+            <div class="project-thumb">
+                <img src="image/blog-image-placeholder-v2.jpg" alt="HTML Website Group Project thumbnail">
+            </div>
+            <h3>HTML Website Group Project</h3>
+            <p>
+              Collaborative project to build a team landing page using Git workflow
+              (branching, merging, pull requests).
+            </p>
+            <p class="project-meta">
+              Type: Software Engineering. <br>
+              Tools: VS Code, GitHub, Terminal
+            </p>
+            <a
+              href="/milestone-1-liviaoktantia/asset/fsse-oct25-team5-web-portfolio-collab.pdf"
+              target="_blank"
+              rel="noopener"
+              class="project-btn"
+            >
+              View portfolio PDF
+            </a>
+          </article>
 
+          <!-- Card 2 -->
+          <article class="project-card">
+            <div class="project-thumb">
+                <img src="image/blog-image-placeholder-v2.jpg" alt="HTML Website Group Project thumbnail">
+            </div>
+            <h3>HTML Components Practice</h3>
+            <p>
+              Hands-on exercises with headings, lists, links, images, and simple layout structure
+              to build confidence in core HTML.
+            </p>
+            <p class="project-meta">
+              Type: Software Engineering <br>
+              Tools: VS Code, GitHub
+            </p>
+            <a href="#hero" class="project-btn">
+              See current version
+            </a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card">
+            <div class="project-thumb">
+                <img src="image/blog-image-placeholder-v2.jpg" alt="HTML Website Group Project thumbnail">
+            </div>
+            <h3>Campaign Performance Dashboard</h3>
+            <p>
+              A reporting setup that visualizes key campaign KPIs to support decision making and optimization.
+            </p>
+            <p class="project-meta">
+              Type: Digital Marketing <br>
+              Tools: Looker Studio, HubSpot, Google Ads
+            </p>
+            <a href="https://www.camline.com/" target="_blank" rel="noopener" class="project-btn">
+              Example in real work
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <div class="container">
+        <h2>Blog</h2>
+        <p class="blog-intro">
+          Example topics that reflect what I'm learning and working on.
+          Over time, I plan to turn them into full posts.
+        </p>
+
+        <!-- Most Popular -->
+        <div class="blog-most-popular">
+          <h3 class="blog-section-title">Most Popular</h3>
+
+          <article class="blog-card-large">
+            <div class="blog-thumb-large">
+                <img src="image/blog-image-placeholder.jpg">
+            </div>
+            <div class="blog-card-large-content">
+              <h4>Learning HTML &amp; CSS from Scratch</h4>
+              <p>
+                A reflection on building my first components and landing pages, starting with inline styles,
+                then refactoring into a separate CSS file to keep the code cleaner and easier to maintain.
+              </p>
+              <a href="#" class="blog-read-more">Read more →</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Latest Release -->
+        <div class="blog-latest">
+          <h3 class="blog-section-title">Latest Release</h3>
+
+          <div class="blog-latest-grid">
+            <!-- small card 1 -->
+            <article class="blog-card-small">
+              <h4>Marketing Mindset in Web Projects</h4>
+              <p>
+                Using my digital marketing background to think about audience, messaging, and user flow
+                while coding pages.
+              </p>
+              <a href="#" class="blog-read-more">Read more →</a>
+            </article>
+
+            <!-- small card 2 -->
+            <article class="blog-card-small">
+              <h4>Designing Simple, Human-Friendly Layouts</h4>
+              <p>
+                Keeping layouts clean and focused so visitors can quickly understand what a page is about
+                without feeling overwhelmed.
+              </p>
+              <a href="#" class="blog-read-more">Read more →</a>
+            </article>
+
+            <!-- small card 3 -->
+            <article class="blog-card-small">
+              <h4>Balancing Work, Study, and Practice</h4>
+              <p>
+                Small routines that help me combine a full-time role with structured learning in software engineering.
+              </p>
+              <a href="#" class="blog-read-more">Read more →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2>Let's Collaborate</h2>
+        <p class="contact-intro">
+          If you'd like to talk about projects, content, or anything related to digital marketing and
+          software engineering, please leave a message below.
+        </p>
+
+        <div class="contact-form-wrapper">
+          <form action="#" method="post" class="contact-form">
+            <fieldset>
+              <legend>Submit Your Message Here</legend>
+
+              <div class="form-group">
+                <label for="first-name" class="form-label">First Name *</label>
+                <input
+                  id="first-name"
+                  name="first_name"
+                  type="text"
+                  required
+                  placeholder="Your first name"
+                  autocomplete="given-name"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name" class="form-label">Last Name *</label>
+                <input
+                  id="last-name"
+                  name="last_name"
+                  type="text"
+                  required
+                  placeholder="Your last name"
+                  autocomplete="family-name"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="name@example.com"
+                  autocomplete="email"
+                  inputmode="email"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Write your message here..."
+                  class="form-control"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="nav-cta">
+                Send Message
+              </button>
+
+              <p class="form-help">
+                Fields marked * are required.
+              </p>
             </fieldset>
-            </form>
+          </form>
+        </div>
+      </div>
+    </section>
 
-            </section>
-        </main>
+  </main>
 
-        <footer style="background:#005C46; color:#FFFFFF; text-align:center; padding: 15px;">
-            <p style="margin:4px 0; display: inline;">&copy; 2025 Livia Oktantia</p>
-            <p style="margin:4px 0; display: inline;">| You can find me on: </p>
-                <a href="https://www.linkedin.com/in/liviaoktantia/" rel="noopener" style="color:#FFFFFF; text-decoration:none; vertical-align: bottom;">
-                    <img src="/milestone-1-liviaoktantia/image/linkedin-icon-inverse.png" alt="LinkedIn logo" rel="noindex" style="width:20px; height:20px; padding-right: 3px; vertical-align: bottom;">
-                </a>
-                <a href="https://github.com/liviaoktantia" rel="noopener" style="color:#FFFFFF; text-decoration:none; vertical-align: bottom;">
-                    <img src="/milestone-1-liviaoktantia/image/github-icon-grey.png" alt="LinkedIn logo" rel="noindex" style="width:20px; height:20px; padding-right: 3px; vertical-align: bottom;">
-                </a>
-        </footer>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <p class="footer-copy">
+        &copy; 2025 Livia Oktantia — You can find me on
+        <a href="https://www.linkedin.com/in/liviaoktantia" target="_blank" rel="noopener">LinkedIn</a>
+        and
+        <a href="https://github.com/liviaoktantia" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </div>
+  </footer>
 
-    </body>
+</body>
 </html>

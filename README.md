@@ -1,92 +1,80 @@
-# Personal Landing Page — Livia Oktantia
+# Personal Portfolio – Module 2 Assignment
 
-A minimalist, one-page personal website to introduce my profile, showcase early projects, and provide a simple way to contact me. Built as part of the **RevoU Software Engineering** learning journey using **plain HTML5 with inline styles** (no external CSS frameworks, no JavaScript).
-
----
-
-## Overview
-
-This landing page is my first digital profile. It presents:
-- A concise **hero** introducing who I am and what this page is for.
-- An **About Me** section with a short bio and (on larger screens) a side-by-side layout for photo and text using simple HTML.
-- A **Projects** section listing early software engineering exercises and several digital marketing works in a semantic table.
-- A **Contact** section with an accessible HTML form (client-side only, no backend) so visitors can draft a message.
-
-The goal is to practice clean structure, semantic HTML, and basic styling while keeping the page easy to read and extend.
+This is my updated personal portfolio for the RevoU Software Engineering program, Module 2.  
+In this module, I refactored the original Module 1 landing page (previously styled with inline CSS) into a cleaner structure using an external CSS file, improved layout organization, and added responsive design for different screen sizes.
 
 ---
 
-## Deployed Site & How to Use
+## How to View
 
-**Live URL:**  
+**GitHub Pages:**  
 https://revou-fsse-oct25.github.io/milestone-1-liviaoktantia/
 
-**Navigation**
-- Use the top navigation (Home / About me / Projects / Contact) to jump between sections on the same page.
-- External links (e.g., LinkedIn, portfolio download) open in a new tab.
+---
 
-**What you can do on the page**
-- **Read the intro** in the Hero section to understand the site’s purpose.
-- **Explore About Me** to learn my background and areas of expertise.
-- **Browse Projects** to see placeholder software items and selected digital marketing highlights.  
-  - There is a link to **download a group portfolio PDF** from the table.
-- **Use the Contact form** to draft a message.  
-  - The form uses basic HTML validation (required fields and email input type).  
-  - No backend is connected yet, so submitting the form does not send messages.
+## Overview of the Website
+
+The portfolio is a single-page website containing:
+
+- **Header & Navigation** – Logo text, navigation menu (About Me, Projects, Blog), and a Contact button.
+- **Hero Section** – Title, short introduction, and two call-to-action buttons.
+- **About Me Section** – Profile photo, introduction text, and an expertise list in a responsive grid layout.
+- **Projects Section** – Featured projects and project cards with thumbnails, descriptions, and buttons.
+- **Blog Section** – A large “Most Popular” card and three “Latest Release” cards.
+- **Contact Section** – Contact form with fieldset, labels, required inputs, and helper text.
+- **Footer** – Short copyright line and Social media links.
 
 ---
 
-## Features
+## Features Implemented (Module 2 – CSS)
 
-- **Semantic HTML5**
-  - Proper sectioning elements (`<header>`, `<main>`, `<section>`, `<footer>`).
-  - Descriptive headings (`<h1>` … `<h4>`) with a clear hierarchy.
-  - `<nav aria-label="Primary">` for better accessibility.
-  - `<figure>` and `<img alt="">` for the profile picture.
+### Styling Improvements
+- Converted all inline CSS into a **separate `styles.css` file**.
+- Added consistent typography, spacing, and color styling.
+- Applied custom button designs with hover states.
+- Designed card components for Projects and Blog sections with:
+  - Rounded corners  
+  - Soft borders  
+  - Hover effects (purple border + subtle shadow + slight lift)
 
-- **Meta & Accessibility Basics**
-  - Mobile-friendly viewport.
-  - Meta tags for description, keywords, and author.
-  - Descriptive link text and `rel="noopener"` on external links.
+### Layout & Structure
+- Implemented **CSS Grid** in:
+  - About Me layout  
+  - Project cards grid  
+  - Blog cards layout  
+- Used **Flexbox** for navigation bar alignment.
 
-- **About Me Layout (no flex/grid)**
-  - Simple **presentation table** to position the photo on the left and text on the right (keeps to assignment constraints).
-
-- **Projects Table**
-  - Semantic table with `<caption>`, `<thead>`, and column headers.
-  - Consistent cell padding and readable contrast.
-  - Example link to a downloadable PDF.
-
-- **Contact Form (HTML-only)**
-  - Labeled inputs for first name, last name, email, and message.
-  - Basic validation via `required` and `type="email"`.
-  - Grouped with `<fieldset>` and `<legend>` for clarity.
-
-- **Inline Styling Only**
-  - All styles applied via `style` attributes (no external stylesheets).
-  - Consistent, minimal color use anchored by **Castleton Green (#005C46)**.
+### Responsive Design
+- Added media queries for:
+  - **Tablets (max-width 1024px)** – reorganized About layout, project grid becomes 2 columns, blog adjusts to 2 columns.
+  - **Mobile (max-width 768px)** – stacks layouts vertically, wraps navigation, reduces spacing, and ensures readability.
+- Ensured images scale using `object-fit: cover`.
+- Adjusted hero section and contact form spacing for smaller screens.
 
 ---
 
-## Technologies Used
+##  Technologies Used
 
-- **HTML5** (structure, semantics, accessibility fundamentals)
-- **Inline CSS** (basic visual styling only; no external CSS files, no frameworks)
-- **Assets**
-  - Images (e.g., `image/livia-oktantia.webp`, social icons in `image/`)
-  - PDF download link from the Projects table
-- **Hosting / Deployment**
-  - **GitHub Pages** for static site hosting
-- **Tooling (development)**
-  - **VS Code** (editing)
-  - **Git & GitHub** (version control, collaboration)
-  - **Command Prompt (Windows CMD)** for git/CLI work
+- **HTML5**  
+- **CSS3** (Flexbox, CSS Grid, Media Queries)  
+- **GitHub** (for version control & deployment)
 
 ---
 
-## Run Locally
+## Screenshots
+![Full landing page view](image/milestone-1-livia-screenshot-fullpage.jpeg)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/revou-fsse-oct25/milestone-1-liviaoktantia.git
-   cd milestone-1-liviaoktantia
+---
+
+## How to View
+
+### Online (Recommended)
+Visit the live GitHub Pages version:  
+https://revou-fsse-oct25.github.io/milestone-1-liviaoktantia/
+
+### Run Locally
+Clone the repository:
+
+Cmd:
+git clone https://github.com/Revou-FSSE-Oct25/milestone-1-liviaoktantia.git
+cd milestone-1-liviaoktantia
